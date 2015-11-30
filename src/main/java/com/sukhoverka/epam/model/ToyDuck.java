@@ -5,6 +5,7 @@ import com.sukhoverka.epam.utils.Statistics;
 public class ToyDuck extends Duck {
 
     private static int STEPS_REQUIRED_FOR_ONE_STEP_UNIT = 1;
+    public static String NAME = "ToyDuck";
     public ToyDuck() {
         DEFAULT_AVAILABLE_STEPS = 4;
         availableSteps = DEFAULT_AVAILABLE_STEPS;

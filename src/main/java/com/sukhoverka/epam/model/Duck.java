@@ -15,9 +15,6 @@ public abstract class Duck {
     private static String UP_DIRECTION = "up";
     private static String DOWN_DIRECTION = "down";
 
-    public static final String REAL_DUCK = "0";
-    public static final String TOY_DUCK = "1";
-
     protected int availableSteps;
     protected int DEFAULT_AVAILABLE_STEPS;
 
