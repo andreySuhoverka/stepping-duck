@@ -72,8 +72,6 @@ public abstract class Duck {
         }
     }
 
-    public abstract void updateAvailableSteps();
-
     public void makeStep(Lab lab, Direction direction) {
         askStuffIfRequired();
         switch (direction) {
@@ -114,6 +112,15 @@ public abstract class Duck {
     protected void updateAvailableSteps(int newValueOfSteps) {
         availableSteps = newValueOfSteps;
     }
+
+    protected void updateAvailableSteps() {
+        availableSteps -= getStepsRequiredForOneStepUnit();
+        if(availableSteps < 0){
+            availableSteps = 0;
+        }
+    }
+    
+    protected abstract int getStepsRequiredForOneStepUnit();
     protected abstract void askStuffIfRequired();
 
 

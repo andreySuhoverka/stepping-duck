@@ -20,8 +20,6 @@ public class FileUtils {
 
             String filePath = FileUtils.class.getClassLoader().getResource("labyrinth.txt").getFile();
             File labFile = new File(filePath);
-            /*File homeDir = new File(System.getProperty("user.home"));
-            File labFile = new File(homeDir, "/tmp/labyrinth.txt");*/
             br = new BufferedReader(new FileReader(labFile));
 
 
